@@ -1,4 +1,4 @@
-import calendar from './dist/index.js'
+import calendar from './calendar'
 
 export default {
   lunar2solar: calendar.lunar2solar, // 将阴历天转为全格式日期对象

@@ -1,31 +1,34 @@
 {
-  "name": "solarday2lunarday",
-  "version": "1.12.1",
+  "name": "solar2lunar",
+  "version": "2.0.0",
   "description": "将公历日期转为农历日期",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "rm -rf ./dist && tsc",
     "release": "tsc && npm publish"
   },
-  "author": "liquanjiang",
+  "author": "xiaoshutong",
   "license": "ISC",
   "dependencies": {
     "dayjs": "^1.9.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liquanjiang/solarday2lunarday.git"
+    "url": "https://github.com/supershutong/solar2lunar.git"
   },
-  "main": "index.js",
-  "typings": "./index.d.ts",
+  "main": "./src/index",
+  "typings": "./dist/calendar.d.ts",
   "keywords": [
     "阳历转阴历",
-    "天天地支",
+    "天干地支",
     "查询节日",
     "calendar",
     "solar",
     "lunar",
-    "solarday2lunarday",
+    "solar2lunar",
     "festival"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
 }
