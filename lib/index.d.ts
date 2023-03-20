@@ -1,6 +1,6 @@
-declare const _default: {
-    lunar2solar: (year: number, month: number, date: number, isLeapM: boolean) => any;
-    solar2lunar: (Year?: string | number | Date | import("dayjs").Dayjs | undefined, Month?: string | number | undefined, Day?: string | number | undefined) => "请检查输入参数的合法性，目前仅支持1901.1.1-2099.12.31之间的查询,传入的时间超出查询范围！" | "请检查输入参数的合法性，月份只能在1~12之间！" | "日期只能在1~31之间！" | {
+declare namespace _default {
+    const lunar2solar: (year: number, month: number, date: number, isLeapM: boolean) => any;
+    const solar2lunar: (Year?: string | number | Date | import("dayjs").Dayjs | undefined, Month?: string | number | undefined, Day?: string | number | undefined) => "请检查输入参数的合法性，目前仅支持1901.1.1-2099.12.31之间的查询,传入的时间超出查询范围！" | "请检查输入参数的合法性，月份只能在1~12之间！" | "日期只能在1~31之间！" | {
         lunarYear: number;
         lunarYearCN: string;
         lunarMonth: number;
@@ -32,11 +32,11 @@ declare const _default: {
         festivalName: string;
         festivalEnName: string;
     };
-    isLeapYear: (solarYear: number) => string | boolean;
-    getYearCN: (year: number) => string;
-    lunarYearDays: (y: number) => number;
-    getConstellation: (cMonth: number, cDay: number) => string;
-    getAllFestival: (solarYear: string | number) => "请输入正确的年份格式" | "请检查输入参数的合法性，目前仅支持1901.1.1-2099.12.31之间的查询,传入的时间超出查询范围！" | ({
+    const isLeapYear: (solarYear: number) => string | boolean;
+    const getYearCN: (year: number) => string;
+    const lunarYearDays: (y: number) => number;
+    const getConstellation: (cMonth: number, cDay: number) => string;
+    const getAllFestival: (solarYear: string | number) => "请输入正确的年份格式" | "请检查输入参数的合法性，目前仅支持1901.1.1-2099.12.31之间的查询,传入的时间超出查询范围！" | ({
         doubleFestivalName: string | undefined;
         isDoubleFestival: true;
         secondFestivalEnName: string | undefined;
@@ -71,5 +71,5 @@ declare const _default: {
         secondFestivalEnName?: undefined;
         secondFestivalName?: undefined;
     })[];
-};
+}
 export default _default;

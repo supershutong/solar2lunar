@@ -10,17 +10,21 @@
     "module": "commonjs",
     // 指定模块化类型
     "declaration": true,
+    "declarationDir": "lib",
     "allowJs": true, 
     // 生成 `.d.ts` 文件
-    "outDir": "./dist",
+    "outDir": "lib",
     // 编译后生成的文件目录
     "strict": true,
     // 开启严格的类型检测
     "esModuleInterop": true,
     // esModuleInterop 的作用可见以下链接： https://blog.csdn.net/juzipidemimi/article/details/103438437
   },
+  "include": [
+    "./index.js",
+    "./src"
+  ],
   "exclude": [
-    "node_modules",
-    "dist"
+    "node_modules"
   ]
 }

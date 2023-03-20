@@ -1,11 +1,11 @@
 {
   "name": "xst-solar2lunar",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "将公历日期转为农历日期",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./dist && tsc",
-    "release": "tsc && npm publish"
+    "build": "rm -rf ./lib && tsc",
+    "release": "npm run build && npm publish"
   },
   "author": "xiaoshutong",
   "license": "ISC",
@@ -16,9 +16,10 @@
     "type": "git",
     "url": "https://github.com/supershutong/solar2lunar.git"
   },
-  "main": "./src/index",
-  "typings": "./dist/calendar.d.ts",
+  "main": "./lib/index",
+  "typings": "./lib/src/index.d.ts",
   "keywords": [
+    "农历",
     "阳历转阴历",
     "天干地支",
     "查询节日",
@@ -27,6 +28,10 @@
     "lunar",
     "solar2lunar",
     "festival"
+  ],
+  "files": [
+    "src",
+    "lib"
   ],
   "devDependencies": {
     "typescript": "^5.0.2"
