@@ -10,7 +10,7 @@
 
 # 使用方法
 
-# import calendar from 'solarday2lunarday'
+# import calendar from 'solar2lunar'
 
 # 可调用方法
 
@@ -122,4 +122,3 @@
 # 返回值类型，节日数组
 
 # 新增双节同庆的配置
-
